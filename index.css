@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    color: red;
+}
+
+
+.user-panel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[name="search"] {
+    width: 20vw;
+    max-width: 6rem;
+    padding: 0.3rem 30px 0.3rem 0;
+}
+
+.search-icon {
+    margin-left: -40px;
+}
+.notification-icon {
+    font-size: 1.4rem;
+    border-radius: 100%;
+}
+
+.user-image {
+    width: 2.5rem;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+/* main section */
+main,section {
+    padding: 1rem;
+}
+
+.hero-video {
+    background: gray;
+    /* background: url("https://picsum.photos/500");
+    background-size: cover; */
+    color: white;
+    padding: 2rem;
+    aspect-ratio: 7/5;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rating-section i {
+    color: red;
+}
+
+.rating {
+    padding: 0 0.4rem;
+    border: 1px solid white;
+    border-radius: 0.2rem;;
+    margin: 0 1rem;
+}
+
+.hero-video h2 {
+    color: rgb(238, 204, 10);
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.movie-info {
+    width: 60%;
+}
+
+.hero-movie-details {
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.hero-movie-details p {
+    font-size: 0.9em;
+    margin: 0.3rem 0;
+}
+
+.red {
+    color: red;
+}
+
+.btn {
+    background: red;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.btn-lg {
+    padding: 0.7rem 2.1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9em;
+}
+
+.btn i { 
+    position: absolute;
+    left: .7em;
+}
+
+.btn-md {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.7em;
+}
+
+
+/* suggestiobn section */
+.suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.suggestion-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-card {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0.5rem;
+    background: gray;
+    color: white;
+    width: 30%;
+}
+
+.suggestion-card .rating {
+    margin-left: 0;
+}
+
+.suggestion-card .rating-section {
+    margin-bottom: 1rem;
+}
+
+.suggestion-card:nth-child(2) {
+    background: blue;;
+}
+
+.suggestion-card:nth-child(3) {
+    background: green;;
+}
