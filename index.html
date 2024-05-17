@@ -8,25 +8,30 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="./index.css" rel="stylesheet" />
-        <title>WiTFLiX</title>
+        <title>NiTFLiX</title>
         <link rel="shortcut icon" href="assets/logo.svg">
       </head>
       <body>
         <header>
             <h1>NiTFLiX</h1>
+            <div class="navigation">
             <nav>
                 <a href="">Ana Sayfa</a>
                 <a href="">Diziler</a>
                 <a href="">Filmler</a>
                 <a href="">Listem</a>
             </nav>
-            <div class="search-wrap">
-                <input type="text" id="search" placeholder="Search"/>
+        </div>
+            <div class="user-panel">
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
-                <i class="fa-regular fa-bell notification-icon"></i>
+                <input type="text" id="search">
                 <i id="clear" class="material-icons">clear</i>
+                <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-bell" id = "notificationicon"></i>
                 <img src="/assets/avatar.png" alt="" class="user-image">
             </div>
         </header>
@@ -34,7 +39,7 @@
         <main>
             <div class="hero-video">
                 <div class="hero-details"> 
-                    <video autoplay muted loop id="bannervideo">
+                    <video  autoplay loop id="bannervideo"> <!-- autoplay yazılacak -->
                         <source src="assets/Banner.mp4" type="video/mp4">
                     </video>
                     <div class="hero-details2">
@@ -63,16 +68,406 @@
                 </div>
             </div>
         </main>
-        <section>
-            <div class="suggestion-header">
-                <p>Recommended for You</p>
-                <p>View All</p>
+        <section class="thumbSection">
+            <h2 class="thumbTitle">Mehmet, İzlemeye Devam Et</h2>
+            <div class="thumbTiles swiper-container">
+                      <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                        alt="The Queen's Gambit">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 20%;">
+                        </span>
+                    </span>
+                </div>
             </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                <img class="thumbTile__image"
+                    src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdPrypf33QcVWc0DHxX7rDoTSbX7EgHSJd_VDlwIr81A40ua4l2F_esQS1u4zB9SkN5TAGO1Bw0SmoEqTICKfx9vbRu-qdKh9KGWuRLasXOrCIUpEYnMffVoebRS.jpg?r=d3b"
+                    alt="The Crown">
+            </a>
+            <div class="progress">
+                <span class="progress-bar">
+                    <span role="presentation" class="progress-completed" style="width: 90%;">
+                    </span>
+                </span>
+            </div>
+        
+        </div>
+
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABasLrr-dDSTDaiUhncTXbVySQ-QXFZwjep_rsK1j_UVgC9V5YtLH0L8qICJaBTwjzMslMh-URImDCngOT5lrTYckdH2KDXPRwIWuR8N_qua-V4taH8gRrVUcGidTi12YK0kq.jpg?r=767"
+                        alt="Disenchantment">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 10%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdC68yY5lufxut8mEd_cupAfZAgWwJ84fdPTBY5ZlqkX2Fbb767aM4KkZN2tmF-nraf0KSehQIw2wsTegAabUKG3CEYVOfDoakI.webp?r=07c"
+                        alt="Big Mouth">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 30%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                        alt="Rick and Morty">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 80%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbEelxembeoZ2xXaoT1jLhY15oVI6dyAbEehstJKPYRcY2uVuhKdQF5CcQKIKrp89DZ4X349pPBFU6ALdyBanQvDuxIUauex4CEuME-6LfPuU16HydTDX0NML8XT397OfhVJzx0CmwTjZX1vJaCjo6I-YYfF34JZhgYoklgWBk7Xer5Rv-N756KzMsy5Q2iIxNKeC3M4L9GB4fUsDP3SPCoVo3IBzLZXQY8XNrtYrcRrA2sZzpTK7a-9jLCx5xLtBNGdUOgIbaeK4hwvaQfcXTbNQSAKocqr1JssAo81up06cPC_Y_6-rcr47gNkw9hWUGUi7aDqqM17ePrbgdRYDMnZFNDvz8TFm8pG_Cebs2mPUi4VdmonXpDWnd6xj-lukx7eOfRg1QQ8J1iJkdDo2XqVFIrB9Qt9lzq03KuW98YRhBsheuzKi6aEhkbb4egJFx2MWCNwYZFuug.jpg?r=3bc"
+                        alt="Queen of Tears">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 90%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaPXz7v2NuyiSemal6D36nkcyn9nORgB7bOfyWtUz1lUQgUExwnWYbGRFeACqn5vjUibRnuZGI4MKcdUetzZrlQPizurNnbkWLA1-hmz2CyXsE23F4x1melfVNXp5lzUoKSp.jpg?r=37e"
+                        alt="Bojack HorseMan">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 50%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABU-vH7Wj4nHqVu6r0ZxIuZneTXOClChiadXaSjWliIsag-n9Obkd4GjSFtfgVarm7r02kyLTCgYC7xcOiDqF0GVFyrOZnTL0sxdlEP8740nP6kzfMQiFCqrrM_onS4ieEWBNiCUCBU9mG8YI8PjU0zex_TBRgmckgU8iwa0LV77hFYDMsBcqnlPZ0ghNO9I.jpg?r=a4b"
+                        alt="Kuş Uçuşu">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 50%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABf7XTJkAdov2C9CxW1-6aR46kXBoy-E27cjTaMhPHfbTw-JrTaWOJ7qzTgYIefm5rblB-6_sfGWNSM1Am5oaGHp9k7hF7MuBxMHmWl4dIbbBSgzkat7MfdOK9J8faR6jNyCJ0SP9q4rm8tVnO5wuYw-tG3mGJJYgPc6PhHFkQvoYSNOCiOScJ69GW8NjTZw.jpg?r=3ac"
+                        alt="Baby reinderr">
+                </a>
+                <div class="progress">
+                    <span class="progress-bar">
+                        <span role="presentation" class="progress-completed" style="width: 50%;">
+                        </span>
+                    </span>
+                </div>
+            </div>
+            ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
         </section>
 
+        <section class="top10Turkey">
+            <h2>Türkiye'de Bugünün Top 5 Dizi Listesi</h2>
+            <div class="wrapper">
+                <div class="item">
+                  <img src="//image.tmdb.org/t/p/w220_and_h330_face/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg" />
+                  <div>1</div>
+                </div>
+                <div class="item">
+                  <img src="//image.tmdb.org/t/p/w220_and_h330_face/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg" />
+                  <div>2</div>
+                </div>
+                <div class="item">
+                  <img src="//image.tmdb.org/t/p/w220_and_h330_face/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg" />
+                  <div>3</div>
+                </div>
+                <div class="item">
+                  <img src="//image.tmdb.org/t/p/w220_and_h330_face/wGFUewXPeMErCe2xnCmmLEiHOGh.jpg" />
+                  <div>4</div>
+                </div>
+                <div class="item">
+                  <img src="//image.tmdb.org/t/p/w220_and_h330_face/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg" />
+                  <div>5</div>
+                </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="thumbSection">
+            <h2 class="thumbTitle">Netflix'teki Yeni İçerikler</h2>
+            <div class="thumbTiles swiper-container">
+                      <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdGA-LGGDCRXk_7iIEQ_CZqUdo-Z12jwE1l3Z7YaGerq8M2DSDl6nLhsSUmLSutnpC19samz8MrYKf5nXnpINdkYe_5-4upDr17DaBVvpibD9oYffyBF687PywKgFLHrnOLB7i46wv4m9SJiwTd9Ggj-V5Qo36PIrhbvEbl0Km3PnJxTJGsXc9kpP2r2ff35XuBjpRdpSFAmDqOL9QJBi1RxojX6_06jH6U3VZj3qNKr5khamNY2rxaRiQxRB88eh0nau347u84I9_pdEew18xmAgh98PMPGCTu_TTgLIWE7pprcsLMah9c8QH0xjFySm8j1uzhiNpd0GZL3OmV1oMc7chBybAjCShgsThNmDiGXTw.jpg?r=d2d"
+                    alt="The Queen's Gambit">
+                </a>
+
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                <img class="thumbTile__image"
+                src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABV1hj5cUq-s8AdeCsTWsWwy2tCpvQZf3WT8Dopjyi67JmoxXgTbRxGsrcSLwVHWg-e_6TfIK-seJ2vh5voUsdcl4uCaK80woI0EM7-2TCt_xhXkz-5kWh773K2dz50i24HEVJnXOBOc-61JiC3_1Gx_x0p1qhhtT6nV8_jL6Ja-CMBgYwaUv5YtIBEn55I70szLGVnmNpLqfWsf2U4uP_hj4BPF8O_mlmPZOHmaUf1RLjCcZjToRKFE3L7iTQMZ9qWYl1Q4ql9vazCRZvo9BAIKdM_cd6YEk0kTRhSrNqNQelUXgI_g.jpg?r=4ee"
+                    alt="The Crown">
+            </a>
+        </div>
+
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaBr0Peq4yA9gt4_tG6HShRhhWrIPm9T9qlRx-ofikgFj4oZLBy1FVnzd0bmGBxeGNFyXndKVxvkAFh2Nx6a-wuO_YGZbzlIuOL7VUKWEjogOjCVRFxoQEMtAGLLFg0Irl40IizoI8qIT-Pg7OPFTgU5LqgwKBH6qYmfBZZxvSq14BTGjQ3tXgk6VWE58liiSDZ96afu-qcMQUWzsIYqHFUlatU4nMWwtZAXheFGK8XO8rL0Y0RY_j2rDFbnOoWCnttauICG18x-e2TMEuqsH6H_QBDhQb-kmNbuUs_ri986G9LIJMv1LTTPgg.jpg?r=6c3"
+                    alt="Disenchantment">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbo060FdkfMPjv-Pq_D17LT_-8SBscUmHgo1n9zBGDMYgFnCACo-Er8lkseJsoE3vhyMvfAph86PGMS3VgComdqaIjclQkFBpRFgQW9rsO7QFNV7Ka4b1qo9LbWc8SrCUZq4.jpg?r=472"
+                    alt="Big Mouth">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRblPtZ0iinqMA0yU4c_Z-xAdUN2WNHeQlkBPYEnTRzYgVo44dLnUrD0WesHq4fTj65LIGYFbxKh9orOpjdEp6XGGesGqEr2l8o.webp?r=91c"
+                    alt="Rick and Morty">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZt9Pn5olaKCweHfdEuAoLF3LyReJ-qr3iVsxPqe1iTg7CmnyGrpuXg5hAGEloRp8xZpOmveV2ni-ku6wGr3WWmO5wgumqsg9B5jJJlEE0q8d-TXIPs_rIMSV34OC20X_hzool72A4hWK0ji7VrnDLKMCSxj8iEnTXk.webp?r=f3a"
+                    alt="Queen of Tears">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX_6AVdV3xzqEHGOL06sztwlQSjttb9F9R3IJ0JQ647j8MlRI-7Ohnq0ZEJTSCV1nTx-jpoi6kWQyzuGllR2ht_6pn22DSvWcW_Q6HlK3uDaJo74Jxx55pm8fVLD54H141zI71f3RqPMbpNcYl6LhzjE_v7mEiQieig.webp?r=52e"                        alt="Bojack HorseMan">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfTiUw9wHw2FUijXVlmaxcw9LwV5ogbMVoRv5FOBr66lX0hI8AADax-9WXIrngFdlNFzstqeDztdZvIBRarKcSVQkOB7bebISq3nnrTteZGfXP8n2zjLbDzPh_5qhTpE5t_RSqiTRgO_VMCW0mm25SGQcc9z6qo4uDk0tQtcjZGZCGvBw9ePBX4INqB5s0o2Wq8gAEiGMkKkR02LQGp3lMgZyaUGsWrPPbmRwgrv6g_qgEXXrhA4xfi9t6GpBwDt9lyPYLMj2W8MXfKqdI_UC2Gcqqd39Gt7NRLqK-biVusA7x59RL4.jpg?r=73a"                        alt="Kuş Uçuşu">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdGA-LGGDCRXk_7iIEQ_CZqUdo-Z12jwE1l3Z7YaGerq8M2DSDl6nLhsSUmLSutnpC19samz8MrYKf5nXnpINdkYe_5-4upDr17DaBVvpibD9oYffyBF687PywKgFLHrnOLB7i46wv4m9SJiwTd9Ggj-V5Qo36PIrhbvEbl0Km3PnJxTJGsXc9kpP2r2ff35XuBjpRdpSFAmDqOL9QJBi1RxojX6_06jH6U3VZj3qNKr5khamNY2rxaRiQxRB88eh0nau347u84I9_pdEew18xmAgh98PMPGCTu_TTgLIWE7pprcsLMah9c8QH0xjFySm8j1uzhiNpd0GZL3OmV1oMc7chBybAjCShgsThNmDiGXTw.jpg?r=d2d"                        alt="Baby reinderr">
+                </a>
+            </div>
+            ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+        </section>
+        <div class="oneriler">
+            <section class="thumbSection">
+                <h2 class="thumbTitle">Sizin İçin Önerilenler</h2>
+                <div class="thumbTiles swiper-container">
+                          <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+    
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZt9Pn5olaKCweHfdEuAoLF3LyReJ-qr3iVsxPqe1iTg7CmnyGrpuXg5hAGEloRp8xZpOmveV2ni-ku6wGr3WWmO5wgumqsg9B5jJJlEE0q8d-TXIPs_rIMSV34OC20X_hzool72A4hWK0ji7VrnDLKMCSxj8iEnTXk.webp?r=f3a"
+                        alt="Queen of Tears">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX_6AVdV3xzqEHGOL06sztwlQSjttb9F9R3IJ0JQ647j8MlRI-7Ohnq0ZEJTSCV1nTx-jpoi6kWQyzuGllR2ht_6pn22DSvWcW_Q6HlK3uDaJo74Jxx55pm8fVLD54H141zI71f3RqPMbpNcYl6LhzjE_v7mEiQieig.webp?r=52e"                        alt="Bojack HorseMan">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfTiUw9wHw2FUijXVlmaxcw9LwV5ogbMVoRv5FOBr66lX0hI8AADax-9WXIrngFdlNFzstqeDztdZvIBRarKcSVQkOB7bebISq3nnrTteZGfXP8n2zjLbDzPh_5qhTpE5t_RSqiTRgO_VMCW0mm25SGQcc9z6qo4uDk0tQtcjZGZCGvBw9ePBX4INqB5s0o2Wq8gAEiGMkKkR02LQGp3lMgZyaUGsWrPPbmRwgrv6g_qgEXXrhA4xfi9t6GpBwDt9lyPYLMj2W8MXfKqdI_UC2Gcqqd39Gt7NRLqK-biVusA7x59RL4.jpg?r=73a"                        alt="Kuş Uçuşu">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdGA-LGGDCRXk_7iIEQ_CZqUdo-Z12jwE1l3Z7YaGerq8M2DSDl6nLhsSUmLSutnpC19samz8MrYKf5nXnpINdkYe_5-4upDr17DaBVvpibD9oYffyBF687PywKgFLHrnOLB7i46wv4m9SJiwTd9Ggj-V5Qo36PIrhbvEbl0Km3PnJxTJGsXc9kpP2r2ff35XuBjpRdpSFAmDqOL9QJBi1RxojX6_06jH6U3VZj3qNKr5khamNY2rxaRiQxRB88eh0nau347u84I9_pdEew18xmAgh98PMPGCTu_TTgLIWE7pprcsLMah9c8QH0xjFySm8j1uzhiNpd0GZL3OmV1oMc7chBybAjCShgsThNmDiGXTw.jpg?r=d2d"                        alt="Baby reinderr">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdGA-LGGDCRXk_7iIEQ_CZqUdo-Z12jwE1l3Z7YaGerq8M2DSDl6nLhsSUmLSutnpC19samz8MrYKf5nXnpINdkYe_5-4upDr17DaBVvpibD9oYffyBF687PywKgFLHrnOLB7i46wv4m9SJiwTd9Ggj-V5Qo36PIrhbvEbl0Km3PnJxTJGsXc9kpP2r2ff35XuBjpRdpSFAmDqOL9QJBi1RxojX6_06jH6U3VZj3qNKr5khamNY2rxaRiQxRB88eh0nau347u84I9_pdEew18xmAgh98PMPGCTu_TTgLIWE7pprcsLMah9c8QH0xjFySm8j1uzhiNpd0GZL3OmV1oMc7chBybAjCShgsThNmDiGXTw.jpg?r=d2d"
+                        alt="The Queen's Gambit">
+                    </a>
+    
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                    <img class="thumbTile__image"
+                    src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABV1hj5cUq-s8AdeCsTWsWwy2tCpvQZf3WT8Dopjyi67JmoxXgTbRxGsrcSLwVHWg-e_6TfIK-seJ2vh5voUsdcl4uCaK80woI0EM7-2TCt_xhXkz-5kWh773K2dz50i24HEVJnXOBOc-61JiC3_1Gx_x0p1qhhtT6nV8_jL6Ja-CMBgYwaUv5YtIBEn55I70szLGVnmNpLqfWsf2U4uP_hj4BPF8O_mlmPZOHmaUf1RLjCcZjToRKFE3L7iTQMZ9qWYl1Q4ql9vazCRZvo9BAIKdM_cd6YEk0kTRhSrNqNQelUXgI_g.jpg?r=4ee"
+                        alt="The Crown">
+                </a>
+            </div>
+    
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaBr0Peq4yA9gt4_tG6HShRhhWrIPm9T9qlRx-ofikgFj4oZLBy1FVnzd0bmGBxeGNFyXndKVxvkAFh2Nx6a-wuO_YGZbzlIuOL7VUKWEjogOjCVRFxoQEMtAGLLFg0Irl40IizoI8qIT-Pg7OPFTgU5LqgwKBH6qYmfBZZxvSq14BTGjQ3tXgk6VWE58liiSDZ96afu-qcMQUWzsIYqHFUlatU4nMWwtZAXheFGK8XO8rL0Y0RY_j2rDFbnOoWCnttauICG18x-e2TMEuqsH6H_QBDhQb-kmNbuUs_ri986G9LIJMv1LTTPgg.jpg?r=6c3"
+                        alt="Disenchantment">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbo060FdkfMPjv-Pq_D17LT_-8SBscUmHgo1n9zBGDMYgFnCACo-Er8lkseJsoE3vhyMvfAph86PGMS3VgComdqaIjclQkFBpRFgQW9rsO7QFNV7Ka4b1qo9LbWc8SrCUZq4.jpg?r=472"
+                        alt="Big Mouth">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumbTile" href="#">
+                        <img class="thumbTile__image"
+                        src="https://occ-0-3175-1432.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRblPtZ0iinqMA0yU4c_Z-xAdUN2WNHeQlkBPYEnTRzYgVo44dLnUrD0WesHq4fTj65LIGYFbxKh9orOpjdEp6XGGesGqEr2l8o.webp?r=91c"
+                        alt="Rick and Morty">
+                    </a>
+                </div>
+                ...
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+            </div>
+        </div>
+            </section>
+    
+
+        </div>
 
       </body>
 
+      <footer class="footer-container">
+        <div role="contentinfo" class="member-footer" id="member-footer">
+            <div class="social-links"><a class="social-link" href="https://www.facebook.com/netflixturkiye" target="_blank"
+                aria-label="facebook"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                  viewBox="0 0 24 24" role="img" data-icon="FacebookStandard" aria-hidden="true"
+                  class="svg-icon svg-icon-facebook-logo">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.987 13.1621V21.9841H10.042V13.1621H6.84198V9.51207H10.047V6.73207C10.047 3.56707 11.932 1.82007 14.815 1.82007C15.7618 1.83321 16.7063 1.91577 17.641 2.06707V5.17307H16.045C15.4954 5.10007 14.9424 5.28088 14.5421 5.66447C14.1417 6.04807 13.9375 6.59284 13.987 7.14507V9.51207H17.487L16.928 13.1621H13.987Z"
+                    fill="currentColor"></path>
+                </svg></a><a class="social-link" href="https://www.instagram.com/netflixturkiye" target="_blank"
+                aria-label="instagram"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                  viewBox="0 0 24 24" role="img" data-icon="InstagramStandard" aria-hidden="true"
+                  class="svg-icon svg-icon-instagram-logo">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21.93 16.123C21.9584 17.6765 21.3789 19.1796 20.315 20.312C19.1851 21.3804 17.6797 21.9607 16.125 21.927C14.474 22.021 9.52499 22.021 7.87499 21.927C6.32126 21.9551 4.81792 21.3757 3.68499 20.312C2.61754 19.1819 2.03744 17.6772 2.06999 16.123C1.97699 14.472 1.97699 9.523 2.06999 7.873C2.03955 6.31886 2.61933 4.81466 3.68499 3.683C4.81767 2.61952 6.32162 2.04163 7.87499 2.073C9.52599 1.979 14.475 1.979 16.125 2.073C17.6789 2.04394 19.1826 2.62353 20.315 3.688C21.3825 4.81813 21.9625 6.32278 21.93 7.877C22.023 9.528 22.023 14.472 21.93 16.123ZM20.2 12C20.2 10.545 20.32 7.422 19.8 6.106C19.4572 5.23679 18.7692 4.54875 17.9 4.206C16.588 3.689 13.461 3.806 12.006 3.806C10.551 3.806 7.42799 3.685 6.11199 4.206C5.24298 4.54905 4.55505 5.23699 4.21199 6.106C3.69499 7.418 3.81199 10.545 3.81199 12C3.81199 13.455 3.69099 16.578 4.21199 17.894C4.55535 18.7628 5.24318 19.4506 6.11199 19.794C7.42399 20.311 10.552 20.194 12.006 20.194C13.46 20.194 16.584 20.315 17.9 19.794C18.769 19.451 19.4569 18.763 19.8 17.894C20.319 16.582 20.2 13.455 20.2 12ZM17.13 12C17.13 14.8312 14.8352 17.1264 12.004 17.127C9.17282 17.1276 6.8771 14.8332 6.87599 12.002C6.87489 9.17083 9.16882 6.87466 12 6.87299C13.3608 6.87034 14.6666 7.40959 15.629 8.37161C16.5914 9.33363 17.1311 10.6392 17.129 12H17.13ZM15.336 12C15.336 10.1596 13.8444 8.66756 12.004 8.667C10.1636 8.66645 8.6711 10.1576 8.66999 11.998C8.66889 13.8384 10.1596 15.3313 12 15.333C13.8406 15.3319 15.3328 13.8406 15.335 12H15.336ZM17.336 7.85901C16.6733 7.85901 16.136 7.32174 16.136 6.659C16.136 5.99626 16.6733 5.459 17.336 5.459C17.9987 5.459 18.536 5.99626 18.536 6.659C18.5379 6.97731 18.4124 7.28317 18.1876 7.50853C17.9628 7.73389 17.6573 7.86008 17.339 7.85901H17.336Z"
+                    fill="currentColor"></path>
+                </svg></a><a class="social-link" href="https://twitter.com/netflixturkiye" target="_blank"
+                aria-label="twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                  viewBox="0 0 24 24" role="img" data-icon="TwitterStandard" aria-hidden="true"
+                  class="svg-icon svg-icon-twitter-logo">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.768 8.207C20.7914 11.5932 19.4565 14.8475 17.062 17.242C14.6675 19.6365 11.4132 20.9714 8.027 20.948C5.58923 20.9544 3.20152 20.2564 1.151 18.938C1.50998 18.9771 1.87091 18.9955 2.232 18.993C4.24768 18.9984 6.20639 18.3245 7.792 17.08C5.87438 17.0472 4.18971 15.799 3.6 13.974C3.87982 14.0187 4.16264 14.0421 4.446 14.044C4.84354 14.0428 5.23935 13.9914 5.624 13.891C3.53637 13.4667 2.0367 11.6303 2.038 9.5V9.441C2.65835 9.78765 3.3519 9.98262 4.062 10.01C2.08979 8.69332 1.48225 6.06954 2.675 4.02C4.94972 6.82016 8.30596 8.52336 11.909 8.706C11.8375 8.369 11.8009 8.02551 11.8 7.681C11.8014 5.84295 12.9248 4.19204 14.6341 3.51625C16.3434 2.84047 18.2921 3.2768 19.55 4.617C20.5522 4.42342 21.5131 4.05731 22.39 3.535C22.0556 4.56894 21.3555 5.44538 20.421 6C21.3102 5.89965 22.1795 5.66709 23 5.31C22.3866 6.20228 21.6273 6.98489 20.754 7.625C20.768 7.82 20.768 8.014 20.768 8.207Z"
+                    fill="currentColor"></path>
+                </svg></a><a class="social-link" href="https://www.youtube.com/channel/UCeZOywU-zg9j3SxYG0FdLtw" target="_blank"
+                aria-label="youtube"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                  viewBox="0 0 24 24" role="img" data-icon="YoutubeStandard" aria-hidden="true"
+                  class="svg-icon svg-icon-youtube-logo">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.54 6.67C22.288 5.71873 21.549 4.97331 20.6 4.713C18.88 4.25 12 4.25 12 4.25C12 4.25 5.11997 4.25 3.39997 4.713C2.45094 4.97331 1.71199 5.71873 1.45997 6.67C1.14265 8.42869 0.988663 10.213 0.99997 12C0.988663 13.787 1.14265 15.5713 1.45997 17.33C1.71288 18.2825 2.45401 19.0282 3.40497 19.287C5.11997 19.75 12.005 19.75 12.005 19.75C12.005 19.75 18.885 19.75 20.6 19.287C21.549 19.0267 22.288 18.2813 22.54 17.33C22.8573 15.5713 23.0113 13.787 23 12C23.0113 10.213 22.8573 8.42869 22.54 6.67ZM9.74997 15.27V8.729L15.5 12L9.74997 15.27Z"
+                    fill="currentColor"></path>
+                </svg></a></div>
+            <ul class="member-footer-links">
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="/browse/audio-description"><span
+                    class="member-footer-link-content">Sesli Betimleme</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="https://help.netflix.com/"><span
+                    class="member-footer-link-content">Yardım Merkezi</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="/redeem"><span
+                    class="member-footer-link-content">Hediye Kartları</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="https://media.netflix.com/"><span
+                    class="member-footer-link-content">Medya Merkezi</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="http://ir.netflix.com/"><span
+                    class="member-footer-link-content">Yatırımcı İlişkileri</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="https://jobs.netflix.com/"><span
+                    class="member-footer-link-content">İş İmkanları</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link"
+                  href="https://help.netflix.com/legal/termsofuse"><span class="member-footer-link-content">Kullanım
+                    Koşulları</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link"
+                  href="https://help.netflix.com/legal/privacy"><span class="member-footer-link-content">Gizlilik</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link"
+                  href="https://help.netflix.com/legal/notices"><span class="member-footer-link-content">Yasal Hükümler</span></a>
+              </li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="/Cookies"><span
+                    class="member-footer-link-content">Çerez Tercihleri</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link"
+                  href="https://help.netflix.com/legal/corpinfo"><span class="member-footer-link-content">Kurumsal
+                    Bilgiler</span></a></li>
+              <li class="member-footer-link-wrapper"><a class="member-footer-link" href="https://help.netflix.com/contactus"><span
+                    class="member-footer-link-content">Bize Ulaşın</span></a></li>
+            </ul>
+            <div class="member-footer-service"><button class="service-code">Hizmet Kodu</button></div>
+            <div class="member-footer-copyright"><span>© 1997-2024 Netflix, Inc.&lrm;</span></div>
+          </div>
+
+
+
+      </footer>
 
 
 
